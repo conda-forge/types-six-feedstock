@@ -1,5 +1,5 @@
 {% set name = "types-six" %}
-{% set version = "1.16.17" %}
+{% set version = "1.16.18" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-six-{{ version }}.tar.gz
-  sha256: 5fcb1236616eb906637aebec071691b1541dea22ee43f5ce92f5c775cbafc2dd
+  sha256: 26f481fabb65321ba428bdfb82c97fc638e00be6b20efa83915b007cf3893e28
 
 build:
   number: 0
