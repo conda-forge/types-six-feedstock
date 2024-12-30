@@ -11,19 +11,21 @@ source:
   sha256: 1f662347a8f3b2bf30517d629d82f591420df29811794b0bf3804e14d716f6e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - test -f $SP_DIR/six-stubs/__init__.pyi
 
