@@ -1,5 +1,5 @@
 {% set name = "types-six" %}
-{% set version = "1.17.0.20241205" %}
+{% set version = "1.17.0.20250304" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1f662347a8f3b2bf30517d629d82f591420df29811794b0bf3804e14d716f6e0
+  sha256: eeb240f9faec63ddd0498d6c0b6abd0496b154a66f960c004d4d733cf31bb4bd
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
