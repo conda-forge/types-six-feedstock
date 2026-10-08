@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.17.0.20260724"
+  version: "1.17.0.20261008"
 
 package:
   name: types-six
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-six/types_six-${{ version }}.tar.gz
-  sha256: d7abfa82d40eb7dfbb6356c5b1abb4ddc87e0854515a213512e6be98c5d6bc02
+  sha256: 798d2828334c4b0db1615d40223ccd8d79fd63eec78cb92056c8292c11f8bdf6
 
 build:
   number: 0
